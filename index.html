@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chologhuri - Traveler's Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <span class="logo-text">Chologhuri</span>
+        </div>
+        <nav>
+            <a href="#" class="nav-item active" onclick="showSection(event, 'home-page')">Home</a>
+            <a href="#" class="nav-item" onclick="showSection(event, 'profile-page')">Profile</a>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for Hotels, ATMs, etc...">
+        </div>
+    </header>
+
+    <main>
+        <section id="home-page" class="active-section">
+            <h2 class="section-title">Nearby Hotels</h2>
+            <div id="hotels-container" class="card-container"></div>
+            
+            <h2 class="section-title">Hospitals</h2>
+            <div id="hospitals-container" class="card-container"></div>
+            
+            <h2 class="section-title">Fuel Pumps</h2>
+            <div id="fuel-pumps-container" class="card-container"></div>
+            
+            <h2 class="section-title">Restaurants</h2>
+            <div id="restaurants-container" class="card-container"></div>
+            
+            <h2 class="section-title">ATMs</h2>
+            <div id="atms-container" class="card-container"></div>
+        </section>
+
+        <section id="profile-page">
+            <div class="profile-card">
+                <div class="profile-placeholder"></div>
+                <h2 id="profile-name">User Name</h2>
+                <p>Mobile: <span id="profile-mobile"></span></p>
+                <p>Joined: <span id="profile-joining-date"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <span class="logo-text">Chologhuri</span>
+        </div>
+        <div class="footer-info">
+            <p>Contact: +880 1234 567890</p>
+            <p>&copy; 2025 Chologhuri. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
